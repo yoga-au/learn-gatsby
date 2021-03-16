@@ -6,5 +6,10 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+	plugins: [],
+	// equal to <head> in html?? (need confirm)
+	siteMetadata: {
+		title: 'Web Warrior',
+		description: 'Website developed for portfolio and training'
+	}
 }
