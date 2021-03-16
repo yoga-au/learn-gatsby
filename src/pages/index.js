@@ -8,7 +8,7 @@ export default function Home({ data }) {
 	// console.log(data)
 
 	// use object destructure to store data in variable
-	// const { title, description } = data.site.siteMetadata
+	const { description } = data.site.siteMetadata
 
 	return (
 		<Layout>
@@ -16,12 +16,10 @@ export default function Home({ data }) {
 				<div>
 					<h2>Design</h2>
 					<h3>Develop and Deploy</h3>
-					<p>UI Designer and Web Developer from Depok</p>
+					<p>UI Designer and Web Developer from Depok { description }</p>
 
 					<Link className={styles.btn} to="/projects">Portfolio</Link>
 				</div>
-
-				{/* <p>{ title } - { description }</p> */}
 
 				<img src="/banner.png" alt="Site Banner" style={{ maxWidth: '100%' }}/>
 			</section>
@@ -31,11 +29,10 @@ export default function Home({ data }) {
 
 // syntax for get data from query in page (page query)
 export const query = graphql`
-	query GetMetadata {
+	query GetMetadataDesc {
 		site {
 			siteMetadata {
 				description
-				title
 			}
 		}
 	}
