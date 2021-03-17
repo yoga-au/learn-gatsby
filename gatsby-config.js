@@ -19,6 +19,7 @@ module.exports = {
 	// equal to <head> in html?? (need confirm)
 	siteMetadata: {
 		title: 'Web Warrior',
-		description: 'Website developed for portfolio and training'
+		description: 'Website developed for portfolio and training',
+		contact: 'yoga@yogaau.com'
 	}
 }

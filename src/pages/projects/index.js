@@ -6,7 +6,7 @@ import * as styles from '../../styles/projects.module.css'
 
 export default function Index({ data }) {
 	// console.log(data)
-	const projects = data.allMarkdownRemark.nodes
+	const projects = data.content.nodes
 	// console.log(projects)
 
 	return (
@@ -25,6 +25,8 @@ export default function Index({ data }) {
 						</>
 					))}
 				</div>
+
+				<p>What do you think? If you want to collaborate with me, I'm available at { data.contact.siteMetadata.contact }</p>
 			</div>
 		</Layout>
 	)
@@ -33,15 +35,20 @@ export default function Index({ data }) {
 // export page query
 export const query = graphql`
 	query ProjectsPage {
-			allMarkdownRemark {
+		content: allMarkdownRemark(sort: {fields: frontmatter___date, order: DESC}) {
 			nodes {
-				frontmatter {
-					slug
-					stack
-					title
-					}
-				id
+			  frontmatter {
+				slug
+				stack
+				title
+			  }
+			  id
 			}
-		}
+		  }
+		contact: site {
+			siteMetadata {
+			  contact
+			}
+		  }
 	}
 `
