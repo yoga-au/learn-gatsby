@@ -30,5 +30,6 @@ module.exports = {
 		title: 'Web Warrior',
 		description: 'Website developed for portfolio and training',
 		contact: 'yoga@yogaau.com'
-	}
+	},
+	pathPrefix: '/learn-gatsby'
 }
