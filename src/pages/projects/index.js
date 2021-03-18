@@ -6,7 +6,7 @@ import * as styles from '../../styles/projects.module.css'
 import Img from 'gatsby-image'
 
 export default function Index({ data }) {
-	console.log(data)
+	// console.log(data)
 	const projects = data.content.nodes
 	// console.log(projects)
 
