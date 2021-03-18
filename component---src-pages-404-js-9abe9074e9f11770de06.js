@@ -1,0 +1,2 @@
+(self.webpackChunkgatsby_starter_hello_world=self.webpackChunkgatsby_starter_hello_world||[]).push([[883],{9616:function(e,t,r){"use strict";r.r(t),r.d(t,{default:function(){return n}});var l=r(7294);function n(){return l.createElement("div",null,l.createElement("h1",null,"Error 404"),l.createElement("p",null,"Sorry, seems like you've accessed the page that doesn't exist"))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-9abe9074e9f11770de06.js.map
