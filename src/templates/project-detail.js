@@ -7,6 +7,7 @@ import { graphql } from 'gatsby'
 export default function ProjectDetail({ data }) {
 	// console.log(data)
 
+	// a single markdownRemark will return an object
 	const { html } = data.markdownRemark
 	const { stack, title, feature } = data.markdownRemark.frontmatter
 
